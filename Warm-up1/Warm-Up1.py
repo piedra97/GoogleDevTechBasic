@@ -5,7 +5,7 @@ def sleep_in(weekday, vacation):
     else:
         return False
 
-
+#diff21
 def diff21(n):
   if n < 21:
     return abs(n-21)
@@ -13,6 +13,7 @@ def diff21(n):
     return 2 *abs(n-21)
 
 
+#near_hundred
 def near_hundred(n):
   if abs(n-100) <= 10 or abs(n-200) <= 10:
     return True
@@ -20,12 +21,14 @@ def near_hundred(n):
     return False
 
 
+#missing_char
 def missing_char(str, n):
     front = str[:n]
     back = str[n + 1:]
     return front + back
 
 
+#monkey_trouble
 def monkey_trouble(a_smile, b_smile):
   if a_smile and b_smile or (not a_smile and not b_smile):
     return True
@@ -33,6 +36,7 @@ def monkey_trouble(a_smile, b_smile):
     return False
 
 
+#parrot_trouble
 def parrot_trouble(talking, hour):
   if talking and (hour < 7 or hour > 20):
     return True
@@ -40,7 +44,7 @@ def parrot_trouble(talking, hour):
     return False
 
 
-
+#pos_neg
 def pos_neg(a, b, negative):
   if ((a > 0 and b < 0) or (a < 0 and b > 0)) and not negative:
     return True
@@ -50,6 +54,7 @@ def pos_neg(a, b, negative):
     return False
 
 
+#front_back
 def front_back(str):
     if len(str) <= 1:
         return str
@@ -66,6 +71,7 @@ def front_back(str):
     return result
 
 
+#sum_double
 def sum_double(a, b):
   if a == b:
     return 2*(a+b)
@@ -73,6 +79,7 @@ def sum_double(a, b):
     return a+b
 
 
+#makes10
 def makes10(a, b):
   if (a == 10 or b == 10) or a + b == 10:
     return True
@@ -80,6 +87,7 @@ def makes10(a, b):
     return False
 
 
+#not_string
 def not_string(str):
   if str[0:3] == 'not':
     return str
@@ -87,6 +95,7 @@ def not_string(str):
     return 'not ' + str
 
 
+#front3
 def front3(str):
   return 3*str[0:3]
 
